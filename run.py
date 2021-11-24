@@ -77,8 +77,9 @@ print("The objective of the Hangman is to guess the secret word.")
 print("You will need to try you letter at a time,")
 print("but If the word does not contain the suggested letter")
 print("the computer will draws one element of a hangman’s gallows")
+print("Just a reminder, you only have 6 attempts, good luck!")
 
-while win != len(word) and wrong != 7:
+while win != len(word) and wrong != 6:
     message = ''
 # Checking if user input matches the letter in the "secret word".
     for letter in word:
