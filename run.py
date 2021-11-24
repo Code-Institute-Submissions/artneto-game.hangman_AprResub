@@ -95,4 +95,12 @@ while win != len(word) and wrong != 7:
     if letter in letters_rg+letters_wrg:
         print('Wrong guess')
         continue
+    if letter in word:
+        print('Good job')
+        letters_rg += letter
+        win += word.count(letter)
+    else:
+        print('Is not the right word')
+        letters_wrg += letter
+        wrong += 1
 
