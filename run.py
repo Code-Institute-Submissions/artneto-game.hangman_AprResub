@@ -104,7 +104,7 @@ while win != len(word) and wrong != 7:
         letters_wrg += letter
         wrong += 1
 
-        
+
 # This code is the end game, will show the secret word even if the user 
 # win or loose.
 if wrong < 7:
@@ -122,3 +122,23 @@ if wrong < 7:
     print("        '-------'       ")
 
 else:
+
+    print("Game over, you are hanged!")
+    print("The secret word was {}".format(word))
+    print("    _______________         ")
+    print("   /               \       ")
+    print("  /                 \      ")
+    print("//                   \/\  ")
+    print("\|   XXXX     XXXX   | /   ")
+    print(" |   XXXX     XXXX   |/     ")
+    print(" |   XXX       XXX   |      ")
+    print(" |                   |      ")
+    print(" \__      XXX      __/     ")
+    print("   |\     XXX     /|       ")
+    print("   | |           | |        ")
+    print("   | I I I I I I I |        ")
+    print("   |  I I I I I I  |        ")
+    print("   \_             _/       ")
+    print("     \_         _/         ")
+    print("       \_______/            ")
+    print("Thanks for playing! 💜")
