@@ -1,4 +1,3 @@
-# Your code goes here.
 from random import choice
 
 # Gets a random word from my list_of_words and return the word
@@ -11,7 +10,7 @@ with open('newords.txt') as file:
 word = choice(list_of_words).upper()
 
 word = choice(list_of_words).upper()
-# This function holds the different stages of user guesses 
+# This function holds the different stages of user guesses
 # and displays the graphic for a hangman.
 hang = """
 ____
@@ -105,7 +104,7 @@ while win != len(word) and wrong != 7:
         wrong += 1
 
 
-# This code is the end game, will show the secret word even if the user 
+# This code is the end game, will show the secret word even if the user
 # win or loose.
 if wrong < 7:
     print("Great job, you are the winner!")
