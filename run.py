@@ -79,9 +79,9 @@ print("but If the word does not contain the suggested letter")
 print("the computer will draws one element of a hangman’s gallows")
 print("Just a reminder, you only have 6 attempts, good luck!")
 
+# Checking if user input matches the letter in the "secret word".
 while win != len(word) and wrong != 6:
     message = ''
-# Checking if user input matches the letter in the "secret word".
     for letter in word:
         if letter in letters_rg:
             message += f'{letter} '
@@ -104,10 +104,9 @@ while win != len(word) and wrong != 6:
         letters_wrg += letter
         wrong += 1
 
-
 # This code is the end game, will show the secret word even if the user
 # win or loose.
-if wrong < 7:
+if wrong < 6:
     print("Great job, you are the winner!")
     print("The secret word was {}".format(word))
     print("       ___________      ")
