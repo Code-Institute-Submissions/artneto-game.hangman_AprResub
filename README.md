@@ -20,17 +20,65 @@ In case the user loses and he cannot guess the word before finishing the six rou
 * Random secret words will be masked by the signal "_". 
 * The player can only guess 1 word at the time.
 
-    <img src= "firstimg.png"/>
+    ![image](/assets/images/firstimg.png)
 
 * Plays against the computer
 * User will notificed when he got a right or wrong answer guess.
 * Accept user input
 
-    <img src= "a02.png"/>
+    ![image](/assets/images/a02.png)
 
 * Users cannot enter the same wrong letter to the game.
 * Only one letter can be accepted one at a time.
 
-   <img src="a03.png"/>
+   ![image](/assets/images/a03.png)
 
 * The secret word will only be revealed at the end of the game.
+
+## Future features
+  * Different levels.
+  * Option to add full letter at once.
+
+
+# Testing
+
+* I manually evaluated this project by: * Running the code through a PEP8 linter and verifying there were no     errors.
+
+* Given Invalid inputs including strings where numbers are allowed, out of bounds inputs, and the same input again.
+
+* Tested on my own terminal as well as the Heroku terminal at the Code Institute.
+
+# Bugs
+
+* At first I added the list of words in the run.py but to make the code more organised I created newords.txt file. 
+
+* The game was only with one end game message with no secret word revelaed. I have added function "if" with smaller number of attempts and added print message for "winner" and else for "lost game".
+
+* I also had some Misuse Expressions issues. which causes errors and did not allow it to execute the code correctly.
+
+
+## No bugs remaining.
+
+# Validator testing
+  * PEP8 
+    * No errors were returned from [PEP8online](http://pep8online.com/)
+
+    ![image](/assets/images/a01.png)
+
+# Deployment
+  * Steps for deployment
+    * Fork or clone this repository
+    * Create a new Heroku app
+    * Set the buildbacks to Pyhton and NodeJS in that order
+    * Link the Heroku app to repository
+    * Click on Deploy
+
+# Credits
+  * Code Institute for the deployment terminal
+  * [Youtube] Creating A Simple Hangman Game in Python (https://www.youtube.com/watch?v=5x6iAKdJB6U).
+
+  ## Acknowledgements
+I would like to thank **Slack Community** for their assistance with minor coding issues and **Beatriz Amorim** who tested my game and gave me excellent feedback based on her milestone submission.
+
+  
+
