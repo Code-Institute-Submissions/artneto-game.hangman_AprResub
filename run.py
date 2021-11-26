@@ -8,8 +8,6 @@ with open('newords.txt') as file:
     list_of_words = lines.split('\n')
 
 word = choice(list_of_words).upper()
-
-word = choice(list_of_words).upper()
 # This function holds the different stages of user guesses
 # and displays the graphic for a hangman.
 hang = """
@@ -104,6 +102,7 @@ while win != len(word) and wrong != 6:
         letters_wrg += letter
         wrong += 1
 
+
 # This code is the end game, will show the secret word even if the user
 # win or loose.
 if wrong < 6:
@@ -141,3 +140,4 @@ else:
     print("     \_         _/         ")
     print("       \_______/            ")
     print("Thanks for playing! 💜")
+   
