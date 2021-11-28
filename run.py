@@ -93,12 +93,14 @@ while win != len(word) and wrong != 6:
     if letter in letters_rg+letters_wrg:
         print('Wrong guess')
         continue
+    # Player guessed a right letter.
     if letter in word:
         print('Good job')
         letters_rg += letter
         win += word.count(letter)
     else:
         print('Is not the right word')
+# Player guessed wrong letter.
         letters_wrg += letter
         wrong += 1
 
@@ -140,4 +142,4 @@ else:
     print("     \_         _/         ")
     print("       \_______/            ")
     print("Thanks for playing! 💜")
-   
+
