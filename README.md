@@ -18,20 +18,20 @@ In case the user loses and he cannot guess the word before finishing the six rou
 
 * After user input his name, he will be presented to the rules. 
 * Random secret words will be masked by the signal "_". 
-* The player can only guess 1 word at the time.
+* The player can only guess 1 letter at the time.
 
-    ![image](/assets/images/firstimg.png)
+    ![image](/assets/images/game01.png)
 
 * Plays against the computer
 * User will notificed when he got a right or wrong answer guess.
 * Accept user input
 
-    ![image](/assets/images/a02.png)
+    ![image](/assets/images/game02.png)
 
 * Users cannot enter the same wrong letter to the game.
 * Only one letter can be accepted one at a time.
 
-   ![image](/assets/images/a03.png)
+   ![image](game03.PNG)
 
 * The secret word will only be revealed at the end of the game.
 
@@ -63,7 +63,7 @@ In case the user loses and he cannot guess the word before finishing the six rou
   * PEP8 
     * No errors were returned from [PEP8online](http://pep8online.com/)
 
-    ![image](/assets/images/a01.png)
+    ![image](/assets/images/fi.png)
 
 # Deployment
   * Steps for deployment
