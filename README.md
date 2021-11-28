@@ -67,6 +67,7 @@ In case the user loses and he cannot guess the word before finishing the six rou
   * Steps for deployment
     * Fork or clone this repository
     * Create a new Heroku app
+    * Set the buildbacks to Python and NodeJS in that order
     * Link the Heroku app to repository
     * Click on Deploy
 

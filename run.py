@@ -63,6 +63,12 @@ wrong = 0
 letters_rg = ''
 letters_wrg = ''
 
+
+def playAgain():
+    print('Do you want to play again? (yes or no)')
+    return input().lower().startswith('y')
+
+
 # Displays the welcome prompt and introduces user to the quiz and rules,
 # and takes an input from customer to start the quiz.
 print('*********************************')
@@ -142,4 +148,5 @@ else:
     print("     \_         _/         ")
     print("       \_______/            ")
     print("Thanks for playing!")
+
 
