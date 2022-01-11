@@ -1,4 +1,5 @@
 from random import choice
+import re
 # This function holds the different stages of user guesses
 # and displays the graphic for a hangman.
 def create_chance_for_man():
@@ -39,6 +40,11 @@ def print_initial_message():
     print('*********************************')
 def get_username():
     name = input("Enter your name -> ")
+    is_validate = validate_word_input(name)
+    while not is_validate:
+        print('Invalid Name, input only letters!')
+        name = input("Enter your name -> ")
+        is_validate = validate_word_input(name) 
     print('Welcome', name, '!')
 def print_rules():
     print(" ----------------------------------------- ")
@@ -56,3 +62,23 @@ def create_newords():
         list_of_words = lines.split('\n')
 
     return choice(list_of_words).upper()
+
+#Function to not accept non-letter input
+def validate_letter_input(input):
+    pattern = r'[a-z]|[A-Z]'
+    result = re.findall(pattern, input)
+    if result is None:
+        print('Invalid Input')
+        return False
+    else: 
+        return True
+
+#Function to not accept non-letter input
+def validate_word_input(input):
+    pattern = r'([a-z]|[A-Z])+'
+    result = re.findall(pattern, input)
+    if result is None:
+        print('Invalid Input')
+        return False
+    else: 
+        return True

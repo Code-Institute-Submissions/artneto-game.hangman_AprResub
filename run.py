@@ -3,6 +3,7 @@ from hang import print_initial_message
 from hang import get_username
 from hang import print_rules
 from hang import create_newords
+from hang import validate_letter_input
 
 chance_for_man = create_chance_for_man()
 
@@ -31,21 +32,24 @@ while win != len(word) and wrong != 6:
     print(message)
 
     letter = input('please input a letter').upper()
+    is_validate = validate_letter_input(letter)
+    if is_validate:
 
-    if letter in letters_rg+letters_wrg:
-        print('Wrong guess')
-        continue
-    # Player guessed a right letter.
-    if letter in word:
-        print('Good job')
-        letters_rg += letter
-        win += word.count(letter)
+        if letter in letters_rg+letters_wrg:
+            print('Wrong guess')
+            continue
+           # Player guessed a right letter.
+        if letter in word:
+            print('Good job')
+            letters_rg += letter
+            win += word.count(letter)
+        else:
+            print('Is not the right guess')
+           # Player guessed wrong letter.
+            letters_wrg += letter
+            wrong += 1
     else:
-        print('Is not the right guess')
-# Player guessed wrong letter.
-        letters_wrg += letter
-        wrong += 1
-
+        print('Try again!')
 
 # This code is the end game, will show the secret word even if the user
 # win or loose.
