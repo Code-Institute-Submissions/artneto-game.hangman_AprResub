@@ -66,7 +66,7 @@ def create_newords():
 #Function to not accept non-letter input
 def validate_letter_input(input):
     pattern = r'[a-z]|[A-Z]'
-    result = re.findall(pattern, input)
+    result = re.fullmatch(pattern, input)
     if result is None:
         print('Invalid Input')
         return False
@@ -75,8 +75,9 @@ def validate_letter_input(input):
 
 #Function to not accept non-letter input
 def validate_word_input(input):
+    print('validando nome')
     pattern = r'([a-z]|[A-Z])+'
-    result = re.findall(pattern, input)
+    result = re.fullmatch(pattern, input)
     if result is None:
         print('Invalid Input')
         return False
