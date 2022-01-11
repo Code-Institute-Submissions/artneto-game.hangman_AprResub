@@ -13,22 +13,22 @@ def create_chance_for_man():
         |
     """
     left_arm = """
-        0
-    /|
-    """
+         0
+        /|
+        """
     right_arm = """
-        0
-    /|\\
-    """
+         0
+        /|\\
+        """
     left_leg = """
-        0
-    /|\\
-    /
+         0
+        /|\\
+        /
     """
     right_leg = """
-        0
-    /|\\
-    / \\
+         0
+        /|\\
+        / \\
     """
     return [empty, head, body, left_arm, right_arm, left_leg, right_leg]
 
@@ -75,7 +75,6 @@ def validate_letter_input(input):
 
 #Function to not accept non-letter input
 def validate_word_input(input):
-    print('validando nome')
     pattern = r'([a-z]|[A-Z])+'
     result = re.fullmatch(pattern, input)
     if result is None:
