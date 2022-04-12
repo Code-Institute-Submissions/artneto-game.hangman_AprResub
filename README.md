@@ -55,6 +55,30 @@ In case the user loses and he cannot guess the word before finishing the six rou
 
 * I also had some Misuse Expressions issues. which causes errors and did not allow it to execute the code correctly.
 
+# Updated 12/04/2022
+
+* I have added  validate_letter_input to ensure the input only contains characters AZ and regex to only accept alphabetical characters.
+
+* Another function I have added to my code is the re.fullmatch in order to return a match object if and only if the entire string matches the pattern.
+
+## Technologies
+
+The Python language has been used in the project. The list consists of the technologies and tools that were deployed.
+
+* Python - choose Python Random choice() Method to random get words from my list_of_words and return the word in the game.
+
+* HTML5
+
+* CSS
+
+* JavaScript
+
+* Heroku - It was used to deploy and host the project live in the cloud.
+
+* PEP8 Validator - to validate and check any error present on the code. 
+
+* CSS jigsaw validator - to validate and check any error present on the css code. 
+
 
 ## No bugs remaining.
 
